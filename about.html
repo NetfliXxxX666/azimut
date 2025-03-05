@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Об отеле - Azimut</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="nav-block">
@@ -27,48 +27,92 @@
     <section class="about-us">
         <h2>О нас</h2>
         <div class="about-content">
-            <div class="about-image">
+            <div class="about-image fade-in">
                 <img src="img/about/azimut.jpg" alt="Фото отеля">
             </div>
-            <div class="about-text">
+            <div class="about-text fade-in">
                 <p>Отель Azimut — это современный отель, расположенный в самом сердце Ставрополя. Мы предлагаем нашим гостям комфортабельные номера, высококлассный сервис и широкий спектр услуг для незабываемого отдыха.</p>
                 <p>Наш отель был основан в 2013 году и с тех пор мы стремимся сделать пребывание каждого гостя максимально комфортным и приятным. Мы гордимся тем, что наши гости возвращаются к нам снова и снова.</p>
             </div>
         </div>
     </section>
 
-    <section class="our-values">
-        <h2>Наши ценности</h2>
-        <div class="values-container">
-            <div class="value-item">
-                <img src="img/icons/hospitality.png" alt="Гостеприимство">
-                <h3>Гостеприимство</h3>
-                <p>Мы делаем все, чтобы каждый гость чувствовал себя как дома.</p>
+    <section class="features">
+        <h2>Наши преимущества</h2>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <i class="fas fa-wifi"></i>
+                <h3>Бесплатный Wi-Fi</h3>
+                <p>Высокоскоростной интернет доступен во всех номерах и общественных зонах.</p>
             </div>
-            <div class="value-item">
-                <img src="img/icons/quality.png" alt="Качество">
-                <h3>Качество</h3>
-                <p>Мы гарантируем высокое качество услуг и комфорта.</p>
+            <div class="feature-card fade-in">
+                <i class="fas fa-utensils"></i>
+                <h3>Ресторан</h3>
+                <p>Наслаждайтесь блюдами европейской и местной кухни в нашем ресторане.</p>
             </div>
-            <div class="value-item">
-                <img src="img/icons/eco-friendly.png" alt="Экологичность">
-                <h3>Экологичность</h3>
-                <p>Мы заботимся об окружающей среде и используем экологичные материалы.</p>
+            <div class="feature-card fade-in">
+                <i class="fas fa-spa"></i>
+                <h3>Спа-центр</h3>
+                <p>Расслабьтесь в нашем спа-центре с сауной, бассейном и массажем.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <i class="fas fa-parking"></i>
+                <h3>Парковка</h3>
+                <p>Бесплатная охраняемая парковка для наших гостей.</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in">
+                <a href="img/about/lux.jpg" data-lightbox="gallery" data-title="Фото номера">
+                    <img src="img/about/lux.jpg" alt="Фото номера">
+                </a>
+            </div>
+            <div class="gallery-item fade-in">
+                <a href="img/about/restaurant1.jpg" data-lightbox="gallery" data-title="Ресторан">
+                    <img src="img/about/restaurant1.jpg" alt="Ресторан">
+                </a>
+            </div>
+            <div class="gallery-item fade-in">
+                <a href="img/about/spa2.jpg" data-lightbox="gallery" data-title="Спа-центр">
+                    <img src="img/about/spa2.jpg" alt="Спа-центр">
+                </a>
+            </div>
+            <div class="gallery-item fade-in">
+                <a href="img/about/bassein.jpg" data-lightbox="gallery" data-title="Бассейн">
+                    <img src="img/about/bassein.jpg" alt="Бассейн">
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="gallery">
-        <h2>Галерея</h2>
-        <div class="gallery-container">
-            <img src="img/gallery/room1.jpg" alt="Номер 1">
-            <img src="img/gallery/restaurant.jpg" alt="Ресторан">
-            <img src="img/gallery/pool.jpg" alt="Бассейн">
-            <img src="img/gallery/spa.jpg" alt="Спа-центр">
-            <img src="img/gallery/lobby.jpg" alt="Лобби">
-            <img src="img/gallery/view.jpg" alt="Вид из окна">
+    <div class="offer-faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-container">
+            <!-- Вопрос 1 -->
+            <div class="faq-item">
+                <h3 class="faq-question">Как воспользоваться скидкой?</h3>
+                <p class="faq-answer">Просто забронируйте номер на нашем сайте и укажите промокод "DISCOUNT20".</p>
+            </div>
+            <!-- Вопрос 2 -->
+            <div class="faq-item">
+                <h3 class="faq-question">Можно ли отменить бронь?</h3>
+                <p class="faq-answer">Да, отмена возможна за 48 часов до заезда.</p>
+            </div>
+            <!-- Вопрос 3 -->
+            <div class="faq-item">
+                <h3 class="faq-question">Какие документы нужны для заселения?</h3>
+                <p class="faq-answer">Паспорт и подтверждение бронирования.</p>
+            </div>
+            <!-- Вопрос 4 -->
+            <div class="faq-item">
+                <h3 class="faq-question">Есть ли парковка на территории отеля?</h3>
+                <p class="faq-answer">Да, у нас есть бесплатная парковка для гостей.</p>
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -100,5 +144,17 @@
             <p>&copy; 2025 Отель Azimut. Все права защищены.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
